@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-4">
+        <img src="~/img/@ViewData["ProductImage"]" class="img-fluid" />
+    </div>
+    <div class="col-8">
+        <h1>@ViewData["ProductName"]</h1>
+        <p>@ViewData["ProductDescription"]p</p>
+        <p>@ViewData["ProductPrice"] TL<p>
+        <p>@ViewData["SatisDurumu"]</p>
+    </div>
+</div>
+
