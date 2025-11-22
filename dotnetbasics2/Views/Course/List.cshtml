@@ -5,10 +5,40 @@
 }
 
 <div class="row">
-    @await Html.PartialAsync("_CardCourse")
-    @await Html.PartialAsync("_CardCourse")
-    @await Html.PartialAsync("_CardCourse")
-    @await Html.PartialAsync("_CardCourse")
+    <div class="col">
+        <div class="card">
+            <img src="~/img/@ViewData["kursResim1"]" class="card-img-top" />
+
+            <div class="card-body">
+                <h5 class="card-title">@ViewData["kursAdi1"]</h5>
+                <p class="card-text">@ViewData["kursAciklama1"]</p>
+                <a href="#">incele</a>
+            </div>
+        </div>
+    </div>
+        <div class="col">
+            <div class="card">
+                <img src="~/img/@ViewData["kursResim2"]" class="card-img-top" />
+
+                <div class="card-body">
+                    <h5 class="card-title">@ViewData["kursAdi2"]</h5>
+                    <p class="card-text">@ViewData["kursAciklama2"]</p>
+                    <a href="#">incele</a>
+                </div>
+            </div>
+        </div>
     
+        <div class="col">
+            <div class="card">
+                <img src="~/img/@ViewData["kursResim3"]" class="card-img-top" />
+
+                <div class="card-body">
+                    <h5 class="card-title">@ViewData["kursAdi3"]</h5>
+                    <p class="card-text">@ViewData["kursAciklama3"]</p>
+                    <a href="#">incele</a>
+                </div>
+            </div>
+
+    </div>
 </div>
 
